@@ -1,0 +1,76 @@
+.location-section
+	.description
+		@apply leading-[1.3] tracking-normal
+		@apply xl:max-w-[calc(443/1920*100rem)]
+	.main-tabslet
+		.tabslet-tabs
+			@apply flex-nowrap overflow-x-auto overflow-y-hidden border-none
+			@apply xl:mb-[calc(30/1920*100rem)] xl:w-full
+			&::-webkit-scrollbar
+				width: 0
+				height: 0
+			li
+				@apply pb-3 mr-0 text-center
+				@apply xl:flex-1 xl:pb-[calc(14/1920*100rem)]
+				&:before
+					content: ''
+					@apply bottom-0 left-1/2 -translate-x-1/2 h-[1px]
+				&:after
+					content: ''
+					@apply absolute bottom-0 left-0 w-full h-[1px] bg-gray-3
+				&.active
+					a
+						@apply text-plus
+			a
+				@apply font-primary lowercase whitespace-nowrap text-[15px] leading-[1.73] px-3 text-gray-2 block
+				@apply xl:text-[calc(16/1920*100rem)] xl:pl-0 xl:pr-4
+	.location-list
+		&::-webkit-scrollbar
+			@apply w-[calc(6/14*1rem)] md:w-[calc(6/15*1rem)] xl:w-[calc(6/1920*100rem)]
+		&::-webkit-scrollbar-track
+			background: #EDEDED
+			@apply rounded-[calc(5/14*1rem)] md:rounded-[calc(5/15*1rem)] xl:rounded-[calc(5/1920*100rem)]
+		&::-webkit-scrollbar-thumb
+			background: theme('colors.gray.4')
+			@apply rounded-[calc(5/14*1rem)] md:rounded-[calc(5/15*1rem)] xl:rounded-[calc(5/1920*100rem)]
+		&::-webkit-scrollbar-thumb:hover
+			background: theme('colors.gray.3')
+		li
+			& + li
+				@apply mt-[calc(20/14*1rem)]
+	.location-maps
+		@apply relative h-0 pt-[calc(765/1135*100%)] overflow-hidden
+		svg, img
+			@apply absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full h-full object-contain
+			@apply focus:outline-none
+	.location-zoom-container
+		@apply xl:absolute xl:top-[calc(182/1920*100rem)] xl:right-0 xl:z-10 xl:w-[calc(1135/1920*100rem)] xl:h-[calc(765/1920*100rem)]
+	.pan-zoom
+		@apply absolute bottom-3 left-3 z-10 flex-center border border-solid border-thirdly text-thirdly cursor-pointer transition-all ease-linear duration-300 bg-[#F2F1E6] hidden
+		@apply xl:w-[calc(40/1920*100rem)] xl:h-[calc(40/1920*100rem)] xl:hover:bg-thirdly xl:hover:text-white
+		&.zoom-in
+			@apply bottom-14
+		@screen xl
+			@apply flex
+	@media(max-width: 575.89px)
+		.tabslet-tabs
+			position: sticky
+			top: 69.98px
+			z-index: 500
+			background: #FFFEFA
+		.location-zoom-container
+			@apply pointer-events-none
+
+.stroke-line-up
+	stroke-width: .5px
+	animation: StrokeLine1 7s infinite linear
+	stroke-linecap: round
+	stroke-miterlimit: 10
+	stroke-dasharray: 5
+
+.stroke-line-down
+	stroke-width: .5px
+	animation: StrokeLine2 7s infinite linear
+	stroke-linecap: round
+	stroke-miterlimit: 10
+	stroke-dasharray: 5

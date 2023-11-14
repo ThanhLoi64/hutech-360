@@ -1,0 +1,80 @@
+@function r($size)
+	@return ($size /16px * 1rem)
+
+=line($line)
+	-webkit-line-clamp: $line
+
+=line-all($line)
+	overflow: hidden
+	display: -webkit-box
+	text-overflow: ellipsis
+	-webkit-box-orient: vertical
+	-webkit-line-clamp: $line
+
+=img-scale($ratio)
+	padding-top: ($ratio * 100%)
+
+=iframe-scale($ratio)
+	padding-top: ($ratio * 100%)
+
+=video-scale($ratio)
+	padding-top: ($ratio * 100%)
+
+=media-ratio($ratio, $fit:cover)
+	padding-top: ($ratio *100%)
+	img, iframe, video
+		object-fit: $fit
+
+=hover-underline($ratio, $color)
+	background-image: linear-gradient(180deg,transparent $ratio, $color 0)
+
+=gg-speed($auto, $grid)
+	content-visibility: $auto
+	contain-intrinsic-size: $grid
+
+=scroll-y($ratio)
+	&::-webkit-scrollbar
+		width: $ratio
+		border-radius: $ratio / 2
+	&::-webkit-scrollbar-track
+		background: #ebebeb
+		border: thin solid white
+	&::-webkit-scrollbar-thumb
+		background: #cccccc
+		border-radius: $ratio / 2
+	&::-webkit-scrollbar-thumb:hover
+		background: #f1f1f1
+
+=scroll-x($ratio)
+	&::-webkit-scrollbar
+		height: $ratio
+		border-radius: $ratio / 2
+	&::-webkit-scrollbar-track
+		background: #ebebeb
+		border: thin solid white
+	&::-webkit-scrollbar-thumb
+		background: #cccccc
+		border-radius: $ratio / 2
+	&::-webkit-scrollbar-thumb:hover
+		background: #cccccc
+
+=background-text
+	@supports (-webkit-background-clip: text)
+		-webkit-background-clip: text
+
+// =font-1
+// 	font-family: 'Roboto', sans-serif !important
+// =font-2
+// 	font-family: 'Poppins', sans-serif !important
+
+=font-material
+	font-family: 'Material Icons' !important
+
+=font-ri
+	font-family: 'remixicon' !important
+
+=font-lnr
+	font-family: 'Linearicons-Free' !important
+
+=font-fa
+	font-family: 'Font Awesome 6 Pro' !important
