@@ -1,0 +1,223 @@
+.home-banner
+	.image
+		// &:before
+		// 	content: ''
+		// 	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.0001) 100%)
+		// 	@apply absolute bottom-0 left-0 h-full w-full
+		&:before
+			content: ''
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45.83%, rgba(0, 0, 0, 0.42) 100%)
+			@apply absolute w-full h-full top-0 left-1/2 -translate-x-1/2 z-10 pointer-events-none
+
+	.swiper-slide
+		img
+			@apply max-w-none inline
+
+.home-about
+	min-height: 100vh
+	.image-wrap
+		.image
+			@apply overflow-visible
+			&:before
+				content: ''
+				@apply absolute border border-solid border-secondary rounded-t-full pointer-events-none
+				@apply bottom-[calc(80/660*100%)] -left-[calc(60/660*100%)] w-[calc(300/440*100%)] h-[calc(450/660*100%)]
+	.description
+		@apply text-center
+		h2
+			@apply text-secondary font-bold leading-tight font-secondary text-4xl xl:text-5xl
+			span
+				@apply text-thirdly block w-full
+	.line
+		@apply block w-full max-w-[calc(30%)] h-[2px] bg-secondary/[.35] mx-auto my-4 xl:my-7
+	// add animation
+	@screen xl
+		&.active
+			// svg
+			.svg-logo-no-stroke
+				.svg-elem-11
+					fill: rgb(241, 131, 107)
+				.svg-elem-10
+					fill: rgb(241, 131, 107)
+				.svg-elem-9
+					fill: rgb(241, 131, 107)
+				.svg-elem-8
+					fill: rgb(241, 131, 107)
+				.svg-elem-7
+					fill: rgb(241, 131, 107)
+				.svg-elem-6
+					fill: rgb(241, 131, 107)
+				.svg-elem-5
+					fill: rgb(241, 131, 107)
+				.svg-elem-4
+					fill: rgb(236, 192, 154)
+				.svg-elem-3
+					fill: rgb(236, 192, 154)
+				.svg-elem-2
+					fill: rgb(236, 192, 154)
+				.svg-elem-1
+					fill: rgb(241, 131, 107)
+
+.home-posit
+	.image-map
+		svg
+			@apply w-full h-full
+			@screen xl
+				@apply max-h-full ml-auto mr-0 w-auto
+		#home-maps
+			@apply object-cover w-full h-full
+	@screen xl
+		min-height: 100vh
+		&:before
+			content: ''
+			width: calc(1200/1920*100%)
+			background: url(../img/background/bg-posit.png) no-repeat center center
+			@apply absolute top-0 left-0 h-full -z-[9] pointer-events-none
+		.image-map
+			#home-maps
+				@apply h-[80%] absolute top-1/2 -translate-y-1/2 right-0 scale-150 max-w-full
+	@media(min-width: 1440px)
+		.image-map
+			#home-maps
+				@apply h-[85%]
+	@media(min-width: 1800px)
+		.image-map
+			#home-maps
+				@apply h-[85%]
+
+.home-utilities
+	min-height: 100vh
+	.main-pagination
+		@apply mt-10
+		@screen xl
+			@apply mt-14
+	.main-tabslet
+		@apply pb-5
+	.main-slide-2
+		&:before
+			content: ''
+			@apply absolute -bottom-5 -left-5 h-full w-full bg-transparent border border-solid border-secondary -z-10
+		@screen md
+			&:before
+				@apply -bottom-8 -left-8
+		@screen xl
+			&:before
+				@apply -bottom-10 -left-10
+	.main-pagination
+		@screen lg
+			@apply relative
+			.swiper-pagination
+				@apply static text-left
+	.tabslet-content-2
+		@screen 2xl
+			@apply pl-[calc(25/780*100%)]
+		@media(min-width: 1600px)
+			@apply pl-[calc(35/780*100%)]
+			@apply -mr-[calc(45/780*100%)]
+		@media(min-width: 1800px)
+			@apply pl-[calc(50/780*100%)]
+			@apply -mr-[calc(90/780*100%)]
+
+.home-ground-plan
+	.list-ground-plan
+		&::-webkit-scrollbar
+			@apply w-[calc(6/14*1rem)] md:w-[calc(6/15*1rem)] xl:w-[calc(6/1920*100*1rem)]
+		&::-webkit-scrollbar-track
+			background: #EDEDED
+			@apply rounded-[calc(5/14*1rem)] md:rounded-[calc(5/15*1rem)] xl:rounded-[calc(5/1920*100*1rem)]
+		&::-webkit-scrollbar-thumb
+			background: theme('colors.gray.4')
+			@apply rounded-[calc(5/14*1rem)] md:rounded-[calc(5/15*1rem)] xl:rounded-[calc(5/1920*100*1rem)]
+		&::-webkit-scrollbar-thumb:hover
+			background: theme('colors.gray.3')
+	.ground-plan-list
+		> *
+			position: absolute
+			top: 0
+			left: 0
+			z-index: -20
+	@screen xl
+		min-height: 100vh
+		.description
+			@apply font-light
+
+.home-product
+	min-height: 100vh
+	.row-margin-top
+		margin-top: -30px
+		> *
+			margin-top: 30px
+	.product-item
+		& + .product-item
+			margin-top: 30px
+	@screen md
+		.product-item
+			& + .product-item
+				margin-top: 0
+	@screen lg
+		.product-item
+			& + .product-item
+				margin-top: -90px
+	@screen xl
+		// @apply p-0
+		// .product-item, .global-title
+		// 	transform: translateY(50px) scale(.8)
+		// .product-rounded-item
+		// 	transform: translateY(25px) scale(.78)
+		.product-item
+			& + .product-item
+				// transform: translateY(0) scale(.8)
+				@apply -mt-[calc(95/1920*100rem)]
+	// @media screen and (min-width: 1440px)
+	// 	.product-item, .global-title
+	// 		transform: translateY(25px) scale(.9)
+	// 	.product-rounded-item
+	// 		transform: translateY(0) scale(.9)
+	// 	.product-item
+	// 		& + .product-item
+	// 			transform: translateY(0) scale(.9)
+	// @media screen and (min-width: 1600px)
+	// 	.product-item, .global-title
+	// 		transform: translateY(0) scale(1)
+	// 	.product-rounded-item
+	// 		transform: translateY(0) scale(1)
+	// 	.product-item
+	// 		& + .product-item
+	// 			transform: translateY(0) scale(1)
+
+.background-1
+	animation: 8s ease 0s infinite normal none running backgroundFade
+.background-2
+	animation: 12s ease 0s infinite normal none running backgroundFade
+.car
+	animation: 3s ease 0s normal none running carZoomIn
+//////////////////////
+// * Full Pages CSS *//
+// .full-page-wrapper
+// 	@screen xl
+// 		width: 100vw
+// 		.one-page
+// 			&.active
+// 				.background-1
+// 					animation: 8s ease 0s infinite normal none running backgroundFade
+// 				.background-2
+// 					animation: 12s ease 0s infinite normal none running backgroundFade
+// 				.animation-text
+// 					.char
+// 						animation: slide-in 1s cubic-bezier(.5, 0, .5, 1) both
+// 						animation-delay: calc(60ms * var(--char-index))
+// 				&.home-about
+// 					.car
+// 						animation: 3s ease 0s normal none running carZoomIn
+// 			.fp-tableCell
+// 				@apply flex-center w-full
+// 				> *
+// 					@apply w-full
+
+// .homepage
+// 	main
+// 		@screen xl
+// 			@apply z-40
+// 	footer
+// 		@screen xl
+// 			@apply w-full h-full pointer-events-auto

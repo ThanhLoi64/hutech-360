@@ -1,0 +1,18 @@
+.global-breadcrumb
+	@apply border-t border-b border-[#EDEDED] border-solid py-4
+	@screen xl
+		@apply py-[calc(10/1920*100rem)]
+	.breadcrumb
+		@apply flex flex-wrap
+	li
+		&:before
+			content: '|'
+			@apply absolute top-1/2 left-full -translate-y-1/2 w-[1px] h-full text-gray-2
+		@apply relative pr-[calc(15/14*1rem)] mr-[calc(15/14*1rem)] last:pr-0 last:mr-0 last:before:hidden
+		@apply md:pr-[calc(24/15*1rem)] md:mr-[calc(24/15*1rem)]
+		@screen xl
+			@apply pr-[calc(30/1920*100rem)] mr-[calc(30/1920*100rem)]
+	a, span
+		@apply text-gray-2 leading-[1.44]
+		@screen xl
+			@apply text-[calc(18/1920*100rem)] hover:text-thirdly
