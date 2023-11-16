@@ -1,0 +1,19 @@
+.gallery-video-wrap
+	.swiper-slide
+		@screen xl
+			@apply py-[calc(46/1920*100rem)] transition-all duration-200 ease-linear
+			.gallery-video-item
+				@apply pointer-events-none
+				.image
+					@apply pt-[calc(472/1000*100%)] transition-all duration-200 ease-linear
+					img
+						@apply opacity-75
+		&.swiper-slide-active
+			@screen xl
+				@apply py-0
+				.gallery-video-item
+					@apply pointer-events-auto
+					.image
+						@apply pt-[calc(564/1000*100%)]
+						img
+							@apply opacity-100
