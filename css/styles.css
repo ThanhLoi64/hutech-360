@@ -174,14 +174,15 @@ body {
     padding: 25px 0px;
     border-bottom: 1px solid rgba(235, 214, 182, 0.5);
 }
-.menu-top {
+/* .menu-top {
     width: 100%;
    position: fixed;
+   opacity: 0.9;
     top: 0;
     background: linear-gradient(180deg, rgba(33, 60, 74, 1) 0.06%, rgba(35, 65, 81, 1) 121.43%);
     z-index: 999;
 
-}
+} */
 .menu-bottom {
     width: 100%;
    position: fixed;
@@ -228,6 +229,15 @@ body {
     text-transform: uppercase;
 }
 
+.menu-parent img {
+    width: 160px;
+    height: auto; 
+}
+
+.menu-parent {
+   width: auto;
+   height: 60px;
+}
 .menu_item.home {
     margin-right: 15px;
 } 
