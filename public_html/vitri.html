@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/styles.css" rel="stylesheet">
-    <link href="./css/mobile.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
     <title>Tour 360 - The PRIVIA</title>
     <link rel="icon" href="https://360.theclassia.com.vn/faviconclassia.png" />
     <meta name="theme-color" content="#000000" />
@@ -20,25 +19,12 @@
     <meta property="og:image:alt" content="Goku">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="628" />
-    <style>
-        body {
-            position: relative;
-            width: 100%;
-            min-height: 100vh;
-            padding: 50px 0 100px 100px;         
-        }
-        .menu-bottom {
-    margin-left: -100px;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
-        <div class="video-container">
-            <video controls autoplay loop id="fullscreen-video">
-                <source src="/images/video1.mp4" type="video/mp4">
-            </video>
-        </div>
+        <video autoplay muted loop id="video">
+            <source src="/images/vitri.mp4" type="video/mp4">
+        </video> 
         <section class="menu-bottom">
             <ul class="menu">
                 <li class="menu_item home"><a href="index.html"></a>
@@ -51,7 +37,7 @@
                     </a>
                 </li>
                 <li class="menu_item-space"></li>
-                <li class="menu_item tab-1 active"><a href="video.html" class="menu-parent">PHIM </a></li>
+                <li class="menu_item tab-1"><a href="video.html" class="menu-parent"> PHIM </a></li>
                 <li class="menu_item-space"></li>
                 <li class="menu_item tab-7">
                     <a href="/vtour/tour.html" class="menu-parent"><span>TOUR 360</span></a>
@@ -59,7 +45,7 @@
                 <li class="menu_item-space"></li>
                 <li class="menu_item tab-2 "><a href="mat-bang.html" class="menu-parent">MẶT BẰNG</a></li>
                 <li class="menu_item-space"></li>
-                <li class="menu_item tab-3"><a href="vitri.html" class="menu-parent">VỊ TRÍ </a></li>
+                <li class="menu_item tab-3 active"><a href="vitri.html" class="menu-parent">VỊ TRÍ </a></li>
             </ul>
         </section>
     <div class="overlay" style="display: none;"></div>
@@ -73,5 +59,4 @@
     <script src="./js/360.js"></script>
     <script src="./js/common.js"></script>
 </body>
-
 </html>
