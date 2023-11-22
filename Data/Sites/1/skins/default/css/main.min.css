@@ -464,7 +464,7 @@ h3 {
 ) {
     .global-title {
         font-size: 2rem;
-        font-weight: 400
+        font-weight: 400;
     }
 }
 
@@ -6595,7 +6595,7 @@ header .mouse-scroll span:before {
     }
     .master-plan .global-title {
         font-size: 36px;
-        margin-bottom: 17px
+        margin-bottom: 17px;
     }
     .master-plan .sub-title {
         font-size: 24px;
