@@ -87,14 +87,98 @@
 
 	</scene>
 
-	<scene name="scene_IMG_20231113_103255_00_028" title="IMG_20231113_103255_00_028" onstart="" thumburl="panos/IMG_20231113_103255_00_028.tiles/thumb.jpg" lat="0.00000000" lng="0.00000000" heading="0.0">
+	<scene name="scene_IMG_20231113_100217_00_009" title="IMG_20231113_100217_00_009" onstart="" thumburl="panos/IMG_20231113_100217_00_009.tiles/thumb.jpg" lat="0.00000000" lng="0.00000000" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-60.495" vlookatmax="60.495" />
+
+		<preview url="panos/IMG_20231113_100217_00_009.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/IMG_20231113_100217_00_009.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_IMG_20231113_100709_00_013" title="IMG_20231113_100709_00_013" onstart="" thumburl="panos/IMG_20231113_100709_00_013.tiles/thumb.jpg" lat="0.00000000" lng="0.00000000" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-60.495" vlookatmax="60.495" />
+
+		<preview url="panos/IMG_20231113_100709_00_013.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/IMG_20231113_100709_00_013.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_IMG_20231113_101212_00_016" title="IMG_20231113_101212_00_016" onstart="" thumburl="panos/IMG_20231113_101212_00_016.tiles/thumb.jpg" lat="0.00000000" lng="0.00000000" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-60.495" vlookatmax="60.495" />
+
+		<preview url="panos/IMG_20231113_101212_00_016.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/IMG_20231113_101212_00_016.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_IMG_20231113_101503_00_018" title="IMG_20231113_101503_00_018" onstart="" thumburl="panos/IMG_20231113_101503_00_018.tiles/thumb.jpg" lat="0.00000000" lng="0.00000000" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-60.495" vlookatmax="60.495" />
+
+		<preview url="panos/IMG_20231113_101503_00_018.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/IMG_20231113_101503_00_018.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_IMG_20231113_101601_00_019" title="IMG_20231113_101601_00_019" onstart="" thumburl="panos/IMG_20231113_101601_00_019.tiles/thumb.jpg" lat="0.00000000" lng="0.00000000" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-60.495" vlookatmax="60.495" />
+
+		<preview url="panos/IMG_20231113_101601_00_019.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/IMG_20231113_101601_00_019.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_IMG_20231113_102218_00_023_PureShot" title="IMG_20231113_102218_00_023_PureShot" onstart="" thumburl="panos/IMG_20231113_102218_00_023_PureShot.tiles/thumb.jpg" lat="0.00000000" lng="0.00000000" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-60.495" vlookatmax="60.495" />
+
+		<preview url="panos/IMG_20231113_102218_00_023_PureShot.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/IMG_20231113_102218_00_023_PureShot.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_IMG_20231113_103255_00_028_PureShot" title="IMG_20231113_103255_00_028_PureShot" onstart="" thumburl="panos/IMG_20231113_103255_00_028_PureShot.tiles/thumb.jpg" lat="0.00000000" lng="0.00000000" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-60.495" vlookatmax="60.495" />
+
+		<preview url="panos/IMG_20231113_103255_00_028_PureShot.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/IMG_20231113_103255_00_028_PureShot.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_z4777426688833_7712cc4b7033ceb0f212ca3888a2ce4b" title="z4777426688833_7712cc4b7033ceb0f212ca3888a2ce4b" onstart="" thumburl="panos/z4777426688833_7712cc4b7033ceb0f212ca3888a2ce4b.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20231113_103255_00_028.tiles/preview.jpg" />
+		<preview url="panos/z4777426688833_7712cc4b7033ceb0f212ca3888a2ce4b.tiles/preview.jpg" />
 
-		<image prealign="0|0.0|0">
-			<cube url="panos/IMG_20231113_103255_00_028.tiles/pano_%s.jpg" />
+		<image>
+			<cube url="panos/z4777426688833_7712cc4b7033ceb0f212ca3888a2ce4b.tiles/pano_%s.jpg" />
 		</image>
 
 	</scene>
