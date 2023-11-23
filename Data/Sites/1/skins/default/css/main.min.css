@@ -464,7 +464,7 @@ h3 {
 ) {
     .global-title {
         font-size: 2rem;
-        font-weight: 400
+        font-weight: 400;
     }
 }
 
@@ -817,11 +817,12 @@ h3 {
 
 .btn-view-more.btn-primary {
     --tw-text-opacity: 1;
-    color: rgb(73 93 81/var(--tw-text-opacity))
+    /* color: rgb(73 93 81/var(--tw-text-opacity)) */
+    color: #f61b17;
 }
 
 .btn-view-more.btn-primary .svg-arrow-right .cls-arrow-right {
-    stroke: #495d51
+    stroke: #0063cd
 }
 
 .btn-view-more.btn-secondary {
@@ -5838,7 +5839,8 @@ header .mouse-scroll span:before {
 
 .home-about .description h2 {
     --tw-text-opacity: 1;
-    color: rgb(236 192 154/var(--tw-text-opacity));
+    /* color: rgb(236 192 154/var(--tw-text-opacity)); */
+    color: #185dca;
     font-family: Cormorant Garamond, serif;
     font-size: 1.875rem;
     font-weight: 700;
@@ -5857,13 +5859,14 @@ header .mouse-scroll span:before {
 
 .home-about .description h2 span {
     --tw-text-opacity: 1;
-    color: rgb(241 131 107/var(--tw-text-opacity));
+    /* color: rgb(241 131 107/var(--tw-text-opacity)); */
+    color: #f61b17;
     display: block;
     width: 100%
 }
 
 .home-about .line {
-    background-color: #ecc09a59;
+    background-color: #185dca;
     display: block;
     height: 2px;
     margin: .83333rem auto;
@@ -6592,7 +6595,7 @@ header .mouse-scroll span:before {
     }
     .master-plan .global-title {
         font-size: 36px;
-        margin-bottom: 17px
+        margin-bottom: 17px;
     }
     .master-plan .sub-title {
         font-size: 24px;
