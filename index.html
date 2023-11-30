@@ -52,6 +52,8 @@
   <meta name="format-detection" content="telephone=no" />
   <link rel='shortcut icon' href='/Data/Sites/1/skins/default/favicon.ico' />
   <link rel="stylesheet" href="./css/font/fontawesome-free-6.4.2-web/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
 
   <!-- Preload Js -->
   <script>
@@ -360,14 +362,15 @@
                 <li class="m-2 xl:m-[calc(5/1920*100*1rem)] pointer-events-auto"><a
                     class="flex-center text-[calc(18/1920*100*1rem)] color-primary bg-secondary w-12 h-12 rounded-full overflow-hidden 2xl:w-12 2xl:h-12 xl:hover:bg-thirdly xl:hover:text-white xl:ease-linear"
                     href="https://www.facebook.com/hutechuniversity" target="_blank"><em
-                      class="fa-brands fa-facebook-square"></em></a></li>
+                      class="fas fa-spinner fa-spin"></em></a></li>
                 <li class="m-2 xl:m-[calc(5/1920*100*1rem)] pointer-events-auto"><a
                     class="flex-center text-[calc(18/1920*100*1rem)] color-primary bg-secondary w-12 h-12 rounded-full overflow-hidden 2xl:w-12 2xl:h-12 xl:hover:bg-thirdly xl:hover:text-white xl:ease-linear"
                     href="https://www.youtube.com/@hutechuniversity" target="_blank"><em
-                      class="fa-brands fa-youtube"></em></a></li>
+                      class="fas fa-clock"></em></a>
+                    </li>
                 <li class="m-2 xl:m-[calc(5/1920*100*1rem)] pointer-events-auto"><a
                     class="flex-center text-[calc(18/1920*100*1rem)] color-primary bg-secondary w-12 h-12 rounded-full overflow-hidden 2xl:w-12 2xl:h-12 xl:hover:bg-thirdly xl:hover:text-white xl:ease-linear"
-                    href="./vtour/tour.html" target="_blank"><em class="fa-brands fa-edge-legacy"></em></a>
+                    href="./vtour/tour.html" target="_blank"><em class="fas fa-clock"></em></a>
                   </li>
               </ul>
             </nav>
@@ -429,6 +432,23 @@
                                 <p>dummy text</p>
                               </div>
                             </div>
+                              <!-- Mascot -->
+                            <div class="ggskin ggskin_container " style="bottom: -3px;height: 200px;position: absolute;right: 170px;visibility: inherit;width: 100px;pointer-events: none;transform-origin: 50% 50%;transition: right 0s ease 0s, bottom 0s ease 0s;">
+                              <div class="ggskin ggskin_external " style="border: 0px solid rgb(0, 0, 0);bottom: 0px;cursor: pointer;height: 191px;left: 0px;position: absolute;visibility: inherit;width: 100px;pointer-events: auto;transform-origin: 50% 100%;transition: none 0s ease 0s;transform: translate(0px, 0px) rotate(0deg) scale(0.8, 0.8);">
+                                <img class="ggskin ggskin_external" style="position: absolute; -webkit-user-drag: none; pointer-events: none; height: 191px; left: 50%; margin-left: -47.7727px; top: 50%; margin-top: -95.5px;" src="./images/Mascot.png">
+                                <div class="ggskin ggskin_svg " style="cursor: pointer; height: 40px; position: absolute; right: 0px; top: 0px; visibility: inherit; width: 40px; pointer-events: auto; transform-origin: 0% 100%; transition: width 0s ease 0s, height 0s ease 0s;">
+                                  <img class="ggskin ggskin_svg" src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJjdXJyZW50Q29sb3IiIGNsYXNzPSJiaSBiaS1jaGF0LWZpbGwiIHdpZHRoPSIxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTYgMTYiIGhlaWdodD0iMTYiPgogPHBhdGggZD0iTTggMTVjNC40MTggMCA4LTMuMTM0IDgtN3MtMy41ODItNy04LTctOCAzLjEzNC04IDdjMCAxLjc2Ljc0MyAzLjM3IDEuOTcgNC42LS4wOTcgMS4wMTYtLjQxNyAyLjEzLS43NzEgMi45NjYtLjA3OS4xODYuMDc0LjM5NC4yNzMuMzYyIDIuMjU2LS4zNyAzLjU5Ny0uOTM4IDQuMTgtMS4yMzRBOS4wNiA5LjA2IDAgMCAwIDggMTV6Ii8+Cjwvc3ZnPgo=" style="position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;;">
+                                  <div class="ggskin ggskin_svg " style="cursor: pointer; height: 25px; left: 7.5px; position: absolute; top: 7.5px; visibility: inherit; width: 25px; pointer-events: auto; transform-origin: 50% 50%; transition: none 0s ease 0s; transform: translate(0px, 0px) rotate(0deg) scale(1, 1);"><img class="ggskin ggskin_svg" src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmZmZmIiBjbGFzcz0iYmkgYmktdm9sdW1lLW11dGUtZmlsbCIgd2lkdGg9IjE2IiBmaWxsLW9wYWNpdHk9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE2IDE2IiBoZWlnaHQ9IjE2Ij4KIDxwYXRoIGQ9Ik02LjcxNyAzLjU1QS41LjUgMCAwIDEgNyA0djhhLjUuNSAwIDAgMS0uODEyLjM5TDMuODI1IDEwLjVIMS41QS41LjUgMCAwIDEgMSAxMFY2YS41LjUgMCAwIDEgLjUtLjVoMi4zMjVsMi4zNjMtMS44OWEuNS41IDAgMCAxIC41MjktLjA2em03LjEzNyAyLjA5NmEuNS41IDAgMCAxIDAgLjcwOEwxMi4yMDcgOGwxLjY0NyAxLjY0NmEuNS41IDAgMCAxLS43MDguNzA4TDExLjUgOC43MDdsLTEuNjQ2IDEuNjQ3YS41LjUgMCAwIDEtLjcwOC0uNzA4TDEwLjc5MyA4IDkuMTQ2IDYuMzU0YS41LjUgMCAxIDEgLjcwOC0uNzA4TDExLjUgNy4yOTNsMS42NDYtMS42NDdhLjUuNSAwIDAgMSAuNzA4IDB6Ii8+Cjwvc3ZnPgo=" style="position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;;">
+                                  </div>
+                                </div>
+                                <div class="ggskin ggskin_svg " style="cursor: pointer; height: 40px; position: absolute; right: 0px; top: 0px; visibility: hidden; width: 40px; pointer-events: auto; transform-origin: 0% 100%; transition: width 0s ease 0s, height 0s ease 0s;">
+                                  <img class="ggskin ggskin_svg" src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJjdXJyZW50Q29sb3IiIGNsYXNzPSJiaSBiaS1jaGF0LWZpbGwiIHdpZHRoPSIxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTYgMTYiIGhlaWdodD0iMTYiPgogPHBhdGggZD0iTTggMTVjNC40MTggMCA4LTMuMTM0IDgtN3MtMy41ODItNy04LTctOCAzLjEzNC04IDdjMCAxLjc2Ljc0MyAzLjM3IDEuOTcgNC42LS4wOTcgMS4wMTYtLjQxNyAyLjEzLS43NzEgMi45NjYtLjA3OS4xODYuMDc0LjM5NC4yNzMuMzYyIDIuMjU2LS4zNyAzLjU5Ny0uOTM4IDQuMTgtMS4yMzRBOS4wNiA5LjA2IDAgMCAwIDggMTV6Ii8+Cjwvc3ZnPgo=" style="position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;;">
+                                  <div class="ggskin ggskin_svg " style="cursor: pointer; height: 25px; left: 7.5px; position: absolute; top: 7.5px; visibility: inherit; width: 25px; pointer-events: auto; transform-origin: 50% 50%; transition: none 0s ease 0s; transform: translate(0px, 0px) rotate(0deg) scale(1, 1);"><img class="ggskin ggskin_svg" src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmZmZmIiBjbGFzcz0iYmkgYmktdm9sdW1lLXVwIiB3aWR0aD0iMTYiIGZpbGwtb3BhY2l0eT0iMSIgdmlld0JveD0iMCAwIDE2IDE2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTYiPgogPHBhdGggZD0iTTExLjUzNiAxNC4wMUE4LjQ3MyA4LjQ3MyAwIDAgMCAxNC4wMjYgOGE4LjQ3MyA4LjQ3MyAwIDAgMC0yLjQ5LTYuMDFsLS43MDguNzA3QTcuNDc2IDcuNDc2IDAgMCAxIDEzLjAyNSA4YzAgMi4wNzEtLjg0IDMuOTQ2LTIuMTk3IDUuMzAzbC43MDguNzA3eiIvPgogPHBhdGggZD0iTTEwLjEyMSAxMi41OTZBNi40OCA2LjQ4IDAgMCAwIDEyLjAyNSA4YTYuNDggNi40OCAwIDAgMC0xLjkwNC00LjU5NmwtLjcwNy43MDdBNS40ODMgNS40ODMgMCAwIDEgMTEuMDI1IDhhNS40ODMgNS40ODMgMCAwIDEtMS42MSAzLjg5bC43MDYuNzA2eiIvPgogPHBhdGggZD0iTTEwLjAyNSA4YTQuNDg2IDQuNDg2IDAgMCAxLTEuMzE4IDMuMTgyTDggMTAuNDc1QTMuNDg5IDMuNDg5IDAgMCAwIDkuMDI1IDhjMC0uOTY2LS4zOTItMS44NDEtMS4wMjUtMi40NzVsLjcwNy0uNzA3QTQuNDg2IDQuNDg2IDAgMCAxIDEwLjAyNSA4ek03IDRhLjUuNSAwIDAgMC0uODEyLS4zOUwzLjgyNSA1LjVIMS41QS41LjUgMCAwIDAgMSA2djRhLjUuNSAwIDAgMCAuNS41aDIuMzI1bDIuMzYzIDEuODlBLjUuNSAwIDAgMCA3IDEyVjR6TTQuMzEyIDYuMzkgNiA1LjA0djUuOTJMNC4zMTIgOS42MUEuNS41IDAgMCAwIDQgOS41SDJ2LTNoMmEuNS41IDAgMCAwIC4zMTItLjExeiIvPgo8L3N2Zz4K" style="position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;;">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end Mascot -->
                         </div>
                         <h2
                           class="banner-title absolute left-1/2 -translate-x-1/2 bottom-6 w-full px-4 z-10 xl:px-44 xl:bottom-10 2xl:bottom-16 3xl:bottom-28">
