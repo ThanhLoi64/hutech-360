@@ -630,6 +630,22 @@ h3 {
     top: calc(50% - 13px);
 }
 
+
+.right .tooltip{
+    bottom: calc(50px - 3.5em);
+    left: 40px;
+}
+
+.right .tooltip:after{
+    color: #fff;
+    position: absolute;
+    content: "";
+    left: -13px;
+    border-left: 13px solid;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    top: calc(50% - 13px);
+}
 .btn-view-more.btn-secondary.banner-title {
     color: #fff
 }
