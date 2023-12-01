@@ -453,6 +453,26 @@
                             <!-- audio -->
                            
                             <!-- end audio -->
+                            <!-- gg map -->
+                              <button id="toggleButton">Show Map</button>
+                              <div id="mapContainer" style="display: none;">
+                                 <iframe id="mapFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206985418746!2d106.78253487587696!3d10.855572157727197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175276e7ea103df%3A0xb6cf10bb7d719327!2zSFVURUNIIC0gxJDhuqFpIGjhu41jIEPDtG5nIG5naOG7hyBUUC5IQ00gKFRodSBEdWMgQ2FtcHVzKQ!5e0!3m2!1svi!2s!4v1701440794012!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                               </div>
+                               <script>
+                                const toggleButton = document.getElementById('toggleButton');
+                                const mapContainer = document.getElementById('mapContainer');
+                                
+                                toggleButton.addEventListener('click', function() {
+                                  if (mapContainer.style.display === 'none') {
+                                    mapContainer.style.display = 'block';
+                                    toggleButton.textContent = 'Hide Map';
+                                  } else {
+                                    mapContainer.style.display = 'none';
+                                    toggleButton.textContent = 'Show Map';
+                                  }
+                                });
+                              </script>
+                            <!-- end gg map -->
                         </div>
                         <h2
                           class="banner-title absolute left-1/2 -translate-x-1/2 bottom-6 w-full px-4 z-10 xl:px-44 xl:bottom-10 2xl:bottom-16 3xl:bottom-28">
