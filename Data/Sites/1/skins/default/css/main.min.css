@@ -1492,8 +1492,8 @@ h3 {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     width: calc(100% - 10px);
     z-index: -10
-}
-
+}  
+  
 .button-single .btn-border-gradient em {
     --tw-text-opacity: 1;
     color: rgb(241 131 107/var(--tw-text-opacity));
@@ -1626,7 +1626,7 @@ h3 {
 }
 
 .top-0 {
-    top: 0
+    top: 0;
 }
 
 .left-0 {

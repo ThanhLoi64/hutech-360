@@ -88,6 +88,7 @@ function enableScroll() {
     window.removeEventListener("keydown", preventDefaultForScrollKeys, false);
 }
 
+
 // toggleText
 $.fn.extend({
     toggleText: function(a, b) {
