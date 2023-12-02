@@ -1,624 +1,74 @@
 <!DOCTYPE html>
-<html id="ctl00_Html1" class="scroll-smooth" lang="vi">
-
-<head id="ctl00_Head1">
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js',
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-W933QDD');
-  </script>
-  <!-- End Google Tag Manager -->
-  <title>
-    Trang chủ - Hutech
-  </title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="keywords" content="The Classia" />
-  <meta property="og:title" content="Trang chủ" />
-  <meta property="og:site_name" content="The Classia" />
-  <meta itemprop="name" content="Trang chủ" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "url": "https://sakukostore.com.vn",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://sakukostore.com.vn/product/searchresults.aspx?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-</script>
-  <meta name="ahrefs-site-verification" content="a800bb1452875562d45af68637add9e4d45b684e6397887fcbdaca45583c7bdc">
-  <link rel='alternate' hreflang='vi-VN' href='https://theclassia.com.vn/' />
-  <link rel='alternate' hreflang='en-US' href='https://theclassia.com.vn/en-US/' />
-  <link rel="search" type="application/opensearchdescription+xml" title="Tìm kiếm The Classia"
-    href="https://theclassia.com.vn/SearchEngineInfo.ashx" />
-
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <!-- disable format number to phone (Safari)-->
-  <meta name="format-detection" content="telephone=no" />
-  <link rel='shortcut icon' href='/Data/Sites/1/skins/default/favicon.ico' />
-  <link rel="stylesheet" href="./css/font/fontawesome-free-6.4.2-web/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-
-  <!-- Preload Js -->
-  <script>
-    document.addEventListener('readystatechange', (event) => {
-      let preload = getCookie('preload');
-      if (event.target.readyState === 'interactive') {
-        if (preload == '' || preload == null) {
-          setCookie('preload', 'loaded', 1);
-          $('#preload').addClass('active');
-          $('body').addClass('overflow-hidden');
-        } else {
-          $('#preload').hide().removeClass('active');
-          $('body').removeClass('overflow-hidden');
-        }
-      } else if (event.target.readyState === 'complete') {
-        setTimeout(() => {
-          $('#preload')
-            .removeClass('active')
-            .addClass('preload-done');
-          $('body').removeClass('overflow-hidden');
-        }, 1200);
-      }
-    });
-  </script>
-  <!-- Link Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&amp;family=Cormorant+Garamond:wght@300;400;500;600;700&amp;display=swap"
-    rel="stylesheet" />
-  <!-- Link Css-->
-  <link rel="stylesheet" href="/Data/Sites/1/skins/default/css/global.min.css?v=5.0.0" />
-  <link rel="stylesheet" href="/Data/Sites/1/skins/default/css/account.css?v=5.0.0" />
-  <link rel="stylesheet" href="/Data/Sites/1/skins/default/css/main.min.css?v=5.0.0" />
-  <link rel="canonical" href="https://theclassia.com.vn/" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trãi nghiệm trực tiếp Hutech</title>
+  <link rel="stylesheet" href="./Data/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="icon" href="/images/favicon-16x16.png">
+  <script src="./Data/js/main.js"></script>
 </head>
+<body>
+  <div class="background-image">
+    <div class="social-menu">
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+            <button class="toggle-button" onclick="toggleMap()"><i class="fas fa-map-marker-alt"></i></button>
+        </ul>
+        <div class="map-container">
+          <button onclick="toggleMap()" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: white; cursor: pointer;">Đóng</button>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206985418473!2d106.78253487481905!3d10.85557215772929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175276e7ea103df%3A0xb6cf10bb7d719327!2zSFVURUNIIC0gxJDhuqFpIGjhu41jIEPDtG5nIG5naOG7hyBUUC5IQ00gKFRodSBEdWMgQ2FtcHVzKQ!5e0!3m2!1svi!2s!4v1701517795039!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+          
+    </div>
+    <div class="image-container">
+        <img class="image" src="images/z4936353665526_a1940a9573fd3bb3c73a70170f3dfde0.jpg">
+      </div>
+    <div class="container">
+    <nav>
+        <ul>
+            <li>Trang Chủ</li>
+            <li>Tour 360</li>
+            <li>Khu</li>
+            <li>Tin tức</li>
+            <li>Phim</li>
+        </ul>
+    </nav>
+    <div class="item top" style="top: 32%; left: 24%;">
+        <div class="icon"></div>
+        <div class="tooltip">
+          <h3>E3</h3>
+          <p>dummy text</p>
+        </div>
+      </div>
 
-<body id="ctl00_Body" class="canhcam overflow-hidden scroll-smooth homepage section-grey vi-vn">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W933QDD" height="0" width="0"
-      style="display: none; visibility: hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+      <div class="item bottom" style="top: 10%; left: 59%;">
+        <div class="icon"></div>
+        <div class="tooltip">
+          <h3>E1</h3>
+          <p>dummy text</p>
+        </div>
+      </div>
 
+      <div class="item left" style="top: 34%; left: 70%;">
+        <div class="icon"></div>
+        <div class="tooltip">
+          <h3>E2</h3>
+          <p>dummy text</p>
+        </div>
+      </div>
 
-
-  <!-- preload -->
-  <div class="fixed top-0 left-0 w-full h-full z-10000" id="preload">
-    <div class="logo absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%"
-        viewBox="0 0 262.68 111.32" version="1.1">
-        <defs>
-          <clipPath id="clip1">
-            <path d="M 104 59 L 156 59 L 156 111.320313 L 104 111.320313 Z M 104 59 " class="svg-elem-1"></path>
-          </clipPath>
-          <clipPath id="clip2">
-            <path d="M 211 59 L 262.679688 59 L 262.679688 111.320313 L 211 111.320313 Z M 211 59 " class="svg-elem-2">
-            </path>
-          </clipPath>
-        </defs>
-        <g id="surface1">
-          <path style="
-								stroke: none;
-								fill-rule: nonzero;
-								fill: rgb(236, 192, 154);
-								fill-opacity: 1;
-							" d="M 28.308594 34.570313 C 27.757813 33.492188 27.59375 32.480469 27.824219 31.542969 C 28.046875 30.605469 28.597656 29.839844 29.476563 29.25 C 30.351563 28.660156 31.457031 28.367188 32.785156 28.367188 L 40.640625 28.367188 L 40.640625 50.84375 C 40.613281 51.496094 40.371094 52.054688 39.90625 52.519531 C 39.441406 52.980469 38.882813 53.210938 38.234375 53.210938 L 37.746094 53.210938 L 37.746094 53.589844 L 45.976563 53.589844 L 45.976563 53.210938 L 45.488281 53.210938 C 44.835938 53.210938 44.28125 52.980469 43.816406 52.519531 C 43.351563 52.054688 43.105469 51.496094 43.082031 50.84375 L 43.082031 28.367188 L 50.148438 28.367188 C 50.75 28.390625 51.269531 28.617188 51.710938 29.042969 C 52.148438 29.46875 52.367188 29.996094 52.367188 30.621094 L 52.367188 31.261719 L 52.742188 31.296875 L 52.742188 26.5625 C 52.515625 26.664063 52.140625 26.765625 51.617188 26.863281 C 51.089844 26.964844 50.519531 27.050781 49.90625 27.125 C 49.289063 27.199219 48.707031 27.238281 48.15625 27.238281 L 32.785156 27.238281 C 31.53125 27.238281 30.449219 27.464844 29.53125 27.914063 C 28.617188 28.367188 27.929688 28.96875 27.464844 29.71875 C 27 30.472656 26.800781 31.285156 26.863281 32.164063 C 26.925781 33.039063 27.308594 33.90625 28.007813 34.757813 "
-            class="svg-elem-3"></path>
-          <path style="
-								stroke: none;
-								fill-rule: nonzero;
-								fill: rgb(236, 192, 154);
-								fill-opacity: 1;
-							" d="M 58.792969 53.589844 L 64.019531 53.589844 L 64.019531 53.214844 L 63.53125 53.214844 C 62.878906 53.214844 62.320313 52.980469 61.855469 52.515625 C 61.394531 52.054688 61.148438 51.496094 61.125 50.84375 L 61.125 41.148438 L 76.5 41.148438 L 76.5 50.84375 C 76.5 51.496094 76.261719 52.054688 75.785156 52.515625 C 75.308594 52.980469 74.742188 53.214844 74.09375 53.214844 L 73.605469 53.214844 L 73.605469 53.589844 L 81.835938 53.589844 L 81.835938 53.214844 L 81.347656 53.214844 C 80.695313 53.214844 80.140625 52.980469 79.675781 52.515625 C 79.210938 52.054688 78.96875 51.496094 78.941406 50.84375 L 78.941406 30.019531 C 78.96875 29.371094 79.210938 28.8125 79.675781 28.347656 C 80.140625 27.882813 80.695313 27.652344 81.347656 27.652344 L 81.835938 27.652344 L 81.835938 27.277344 L 73.605469 27.277344 L 73.605469 27.652344 L 74.09375 27.652344 C 74.742188 27.652344 75.308594 27.882813 75.785156 28.347656 C 76.261719 28.8125 76.5 29.371094 76.5 30.019531 L 76.5 40.019531 L 61.125 40.019531 L 61.125 30.019531 C 61.148438 29.371094 61.394531 28.8125 61.855469 28.347656 C 62.320313 27.882813 62.878906 27.652344 63.53125 27.652344 L 64.019531 27.652344 L 64.019531 27.277344 L 55.785156 27.277344 L 55.785156 27.652344 L 56.277344 27.652344 C 56.929688 27.652344 57.484375 27.882813 57.949219 28.347656 C 58.410156 28.8125 58.65625 29.371094 58.683594 30.019531 L 58.683594 50.84375 C 58.65625 51.496094 58.410156 52.054688 57.949219 52.515625 C 57.484375 52.980469 56.929688 53.214844 56.277344 53.214844 L 55.785156 53.214844 L 55.785156 53.589844 L 58.683594 53.589844 "
-            class="svg-elem-4"></path>
-          <path style="
-								stroke: none;
-								fill-rule: nonzero;
-								fill: rgb(236, 192, 154);
-								fill-opacity: 1;
-							" d="M 89.355469 53.589844 L 104.578125 53.589844 L 106.757813 47.5 L 106.382813 47.5 C 106.007813 48.453125 105.546875 49.304688 105.011719 50.054688 C 104.472656 50.808594 103.78125 51.390625 102.941406 51.804688 C 102.101563 52.21875 101.019531 52.421875 99.691406 52.421875 L 91.683594 52.421875 L 91.683594 41.183594 L 98.828125 41.183594 C 99.328125 41.183594 99.753906 41.367188 100.105469 41.730469 C 100.453125 42.09375 100.632813 42.523438 100.632813 43.027344 L 100.632813 43.589844 L 101.007813 43.589844 L 101.007813 37.652344 L 100.632813 37.652344 L 100.632813 38.179688 C 100.632813 38.679688 100.453125 39.109375 100.105469 39.476563 C 99.753906 39.835938 99.328125 40.03125 98.828125 40.058594 L 91.683594 40.058594 L 91.683594 28.441406 L 96.15625 28.441406 C 96.648438 28.519531 97.078125 28.734375 97.4375 29.101563 C 97.859375 29.539063 98.074219 30.058594 98.074219 30.660156 L 98.074219 31.335938 L 98.449219 31.335938 L 98.449219 26.601563 C 98.226563 26.699219 97.847656 26.800781 97.324219 26.898438 C 96.796875 27 96.226563 27.089844 95.613281 27.164063 C 94.996094 27.238281 94.414063 27.277344 93.863281 27.277344 L 86.347656 27.277344 L 86.386719 27.652344 L 86.835938 27.652344 C 87.488281 27.652344 88.050781 27.886719 88.527344 28.347656 C 89.003906 28.8125 89.242188 29.367188 89.242188 30.019531 L 89.242188 50.84375 C 89.214844 51.496094 88.972656 52.054688 88.507813 52.519531 C 88.042969 52.980469 87.488281 53.210938 86.835938 53.210938 L 86.347656 53.210938 L 86.347656 53.589844 L 89.242188 53.589844 "
-            class="svg-elem-5"></path>
-          <path style="
-								stroke: none;
-								fill-rule: nonzero;
-								fill: rgb(242, 131, 107);
-								fill-opacity: 1;
-							" d="M 39.484375 67.828125 C 37.609375 69.546875 36.152344 71.570313 35.121094 73.898438 C 34.085938 76.230469 33.570313 78.78125 33.570313 81.546875 C 33.570313 84.28125 34.078125 86.8125 35.09375 89.144531 C 36.109375 91.472656 37.582031 93.503906 39.507813 95.238281 C 41.4375 96.972656 43.722656 98.316406 46.367188 99.257813 C 49.011719 100.207031 51.964844 100.679688 55.222656 100.679688 C 58.132813 100.679688 60.75 100.242188 63.082031 99.367188 C 65.410156 98.488281 67.402344 97.183594 69.046875 95.449219 C 70.695313 93.714844 71.910156 91.550781 72.699219 88.957031 C 73.488281 86.367188 73.792969 83.371094 73.621094 79.96875 L 73.09375 79.96875 C 73.128906 83.964844 72.410156 87.371094 70.941406 90.195313 C 69.46875 93.015625 67.410156 95.167969 64.765625 96.65625 C 62.117188 98.148438 59.078125 98.894531 55.644531 98.894531 C 52.28125 98.859375 49.355469 98.070313 46.867188 96.527344 C 44.378906 94.984375 42.453125 92.890625 41.085938 90.246094 C 39.71875 87.601563 39.035156 84.628906 39.035156 81.335938 C 39.035156 78.851563 39.421875 76.5625 40.191406 74.476563 C 40.960938 72.394531 42.046875 70.578125 43.449219 69.039063 C 44.851563 67.496094 46.507813 66.304688 48.417969 65.464844 C 50.328125 64.621094 52.4375 64.203125 54.75 64.203125 C 56.746094 64.203125 58.671875 64.542969 60.53125 65.226563 C 62.390625 65.910156 64.019531 66.953125 65.417969 68.355469 C 66.824219 69.757813 67.804688 71.542969 68.363281 73.714844 L 68.835938 73.714844 L 68.101563 65.78125 C 67.046875 65.078125 65.796875 64.484375 64.34375 63.992188 C 62.890625 63.5 61.328125 63.117188 59.664063 62.835938 C 58 62.554688 56.328125 62.414063 54.644531 62.414063 C 51.597656 62.414063 48.777344 62.886719 46.183594 63.835938 C 43.589844 64.78125 41.355469 66.113281 39.484375 67.828125 "
-            class="svg-elem-6"></path>
-          <path style="
-								stroke: none;
-								fill-rule: nonzero;
-								fill: rgb(242, 131, 107);
-								fill-opacity: 1;
-							" d="M 81.609375 63.152344 L 77.5625 63.152344 L 77.5625 63.675781 L 78.246094 63.675781 C 79.15625 63.675781 79.9375 64 80.585938 64.648438 C 81.234375 65.296875 81.574219 66.078125 81.609375 66.988281 L 81.609375 96.105469 C 81.574219 97.019531 81.234375 97.796875 80.585938 98.445313 C 79.9375 99.09375 79.15625 99.417969 78.246094 99.417969 L 77.5625 99.417969 L 77.5625 99.941406 L 101.160156 99.941406 L 104 90.691406 L 103.476563 90.691406 C 102.914063 92.164063 102.230469 93.460938 101.425781 94.582031 C 100.617188 95.703125 99.601563 96.570313 98.375 97.183594 C 97.148438 97.796875 95.625 98.101563 93.804688 98.101563 L 86.496094 98.101563 L 86.496094 66.988281 C 86.53125 66.078125 86.871094 65.296875 87.523438 64.648438 C 88.167969 64 88.949219 63.675781 89.863281 63.675781 L 90.542969 63.675781 L 90.542969 63.152344 L 81.765625 63.152344 "
-            class="svg-elem-7"></path>
-          <g clip-path="url(#clip1)" clip-rule="nonzero">
-            <path style="
-									stroke: none;
-									fill-rule: nonzero;
-									fill: rgb(242, 131, 107);
-									fill-opacity: 1;
-								" d="M 123.28125 69.523438 C 123.40625 69.808594 123.542969 70.085938 123.65625 70.378906 C 124.21875 71.796875 124.726563 73.15625 125.179688 74.453125 L 129.199219 85.855469 L 116.789063 85.855469 Z M 104.367188 99.417969 L 104.367188 99.945313 L 115.140625 99.945313 L 115.140625 99.417969 L 114.671875 99.417969 C 114.25 99.417969 113.835938 99.285156 113.433594 99.023438 C 113.03125 98.761719 112.742188 98.382813 112.566406 97.894531 C 112.425781 97.5 112.429688 97.03125 112.558594 96.5 L 116.078125 87.644531 L 129.828125 87.644531 L 131.753906 93.109375 C 133.117188 97.035156 134.703125 100.300781 136.507813 102.914063 C 138.3125 105.523438 140.257813 107.519531 142.34375 108.90625 C 144.425781 110.289063 146.554688 111.078125 148.726563 111.269531 C 150.898438 111.460938 153.074219 111.101563 155.246094 110.191406 L 155.140625 109.667969 C 153.25 110.121094 151.496094 110.0625 149.886719 109.484375 C 148.273438 108.90625 146.800781 107.992188 145.46875 106.75 C 144.136719 105.503906 142.929688 104.035156 141.84375 102.335938 C 140.757813 100.632813 139.792969 98.875 138.953125 97.050781 C 138.109375 95.230469 137.375 93.476563 136.746094 91.796875 L 129.910156 73.402344 C 129.316406 71.789063 128.632813 70.175781 127.859375 68.566406 C 127.09375 66.953125 126.207031 65.5 125.207031 64.203125 C 124.210938 62.90625 123.015625 61.875 121.632813 61.101563 C 120.25 60.332031 118.644531 59.945313 116.824219 59.945313 C 115.003906 59.945313 112.898438 60.488281 110.515625 61.574219 L 110.675781 62.097656 C 112.496094 61.433594 114.09375 61.222656 115.457031 61.46875 C 116.824219 61.714844 118.023438 62.277344 119.058594 63.152344 C 120.09375 64.027344 120.976563 65.09375 121.714844 66.355469 C 121.773438 66.464844 121.828125 66.582031 121.890625 66.691406 L 109.152344 96.683594 C 108.648438 97.570313 108.046875 98.238281 107.339844 98.65625 C 106.476563 99.164063 105.644531 99.417969 104.839844 99.417969 "
-              class="svg-elem-8"></path>
-          </g>
-          <path style="
-								stroke: none;
-								fill-rule: nonzero;
-								fill: rgb(242, 131, 107);
-								fill-opacity: 1;
-							" d="M 173.167969 99.390625 C 174.253906 99.828125 175.421875 100.152344 176.664063 100.363281 C 177.90625 100.574219 179.070313 100.679688 180.15625 100.679688 C 183.558594 100.679688 186.253906 99.75 188.253906 97.894531 C 190.25 96.035156 191.28125 93.566406 191.355469 90.480469 C 191.390625 89.152344 191.152344 87.863281 190.644531 86.617188 C 190.136719 85.375 189.269531 84.28125 188.042969 83.335938 L 177.792969 74.765625 C 176.882813 74.03125 176.207031 73.234375 175.769531 72.375 C 175.328125 71.519531 175.128906 70.703125 175.164063 69.933594 C 175.164063 68.390625 175.769531 67.050781 176.980469 65.910156 C 178.1875 64.773438 179.773438 64.203125 181.734375 64.203125 C 183.59375 64.203125 185.132813 64.710938 186.359375 65.726563 C 187.585938 66.742188 188.199219 68.109375 188.199219 69.824219 L 188.671875 69.824219 L 188.867188 64.046875 L 188.882813 64.046875 L 188.882813 62.941406 L 186.238281 62.941406 C 185.980469 62.898438 185.722656 62.855469 185.4375 62.808594 C 184.652344 62.6875 183.871094 62.589844 183.101563 62.519531 C 182.328125 62.449219 181.648438 62.414063 181.054688 62.414063 C 178.980469 62.414063 177.222656 62.828125 175.769531 63.648438 C 174.3125 64.476563 173.203125 65.578125 172.433594 66.960938 C 171.660156 68.347656 171.238281 69.824219 171.171875 71.402344 C 171.101563 72.734375 171.347656 74.066406 171.90625 75.398438 C 172.46875 76.730469 173.410156 77.886719 174.742188 78.867188 L 184.519531 87.171875 C 185.46875 87.835938 186.167969 88.589844 186.621094 89.433594 C 187.078125 90.273438 187.308594 91.199219 187.308594 92.21875 C 187.308594 94.179688 186.632813 95.765625 185.28125 96.972656 C 183.933594 98.183594 182.226563 98.820313 180.15625 98.894531 C 178.4375 98.964844 176.925781 98.621094 175.609375 97.867188 C 174.296875 97.113281 173.300781 96.035156 172.613281 94.636719 C 171.933594 93.234375 171.679688 91.640625 171.855469 89.851563 L 171.382813 89.851563 C 171.0625 90.621094 170.8125 91.5 170.617188 92.480469 C 170.425781 93.460938 170.320313 94.417969 170.304688 95.34375 C 170.285156 96.273438 170.363281 97.054688 170.539063 97.683594 C 171.203125 98.386719 172.078125 98.953125 173.167969 99.390625 "
-            class="svg-elem-9"></path>
-          <path style="
-								stroke: none;
-								fill-rule: nonzero;
-								fill: rgb(242, 131, 107);
-								fill-opacity: 1;
-							" d="M 147.585938 99.390625 C 148.671875 99.828125 149.835938 100.152344 151.078125 100.363281 C 152.324219 100.574219 153.488281 100.679688 154.574219 100.679688 C 157.972656 100.679688 160.671875 99.75 162.667969 97.894531 C 164.664063 96.035156 165.699219 93.566406 165.769531 90.480469 C 165.804688 89.152344 165.566406 87.863281 165.0625 86.617188 C 164.554688 85.375 163.6875 84.28125 162.460938 83.335938 L 152.210938 74.765625 C 151.296875 74.03125 150.621094 73.234375 150.1875 72.375 C 149.746094 71.519531 149.546875 70.703125 149.582031 69.933594 C 149.582031 68.390625 150.1875 67.050781 151.394531 65.910156 C 152.605469 64.773438 154.1875 64.203125 156.152344 64.203125 C 158.007813 64.203125 159.550781 64.710938 160.777344 65.726563 C 162.003906 66.742188 162.617188 68.109375 162.617188 69.824219 L 163.089844 69.824219 L 163.285156 64.046875 L 163.300781 64.046875 L 163.300781 62.941406 L 160.65625 62.941406 C 160.398438 62.898438 160.140625 62.855469 159.855469 62.808594 C 159.070313 62.6875 158.289063 62.589844 157.519531 62.519531 C 156.746094 62.449219 156.0625 62.414063 155.46875 62.414063 C 153.398438 62.414063 151.640625 62.828125 150.1875 63.648438 C 148.730469 64.476563 147.617188 65.578125 146.847656 66.960938 C 146.078125 68.347656 145.65625 69.824219 145.585938 71.402344 C 145.519531 72.734375 145.761719 74.066406 146.324219 75.398438 C 146.882813 76.730469 147.828125 77.886719 149.160156 78.867188 L 158.9375 87.171875 C 159.882813 87.835938 160.585938 88.589844 161.039063 89.433594 C 161.496094 90.273438 161.722656 91.199219 161.722656 92.21875 C 161.722656 94.179688 161.046875 95.765625 159.699219 96.972656 C 158.351563 98.183594 156.644531 98.820313 154.574219 98.894531 C 152.855469 98.964844 151.34375 98.621094 150.027344 97.867188 C 148.714844 97.113281 147.714844 96.035156 147.03125 94.636719 C 146.351563 93.234375 146.09375 91.640625 146.269531 89.851563 L 145.796875 89.851563 C 145.480469 90.621094 145.230469 91.5 145.035156 92.480469 C 144.84375 93.460938 144.738281 94.417969 144.71875 95.34375 C 144.703125 96.273438 144.78125 97.054688 144.957031 97.683594 C 145.621094 98.386719 146.496094 98.953125 147.585938 99.390625 "
-            class="svg-elem-10"></path>
-          <path style="
-								stroke: none;
-								fill-rule: nonzero;
-								fill: rgb(242, 131, 107);
-								fill-opacity: 1;
-							" d="M 201.078125 99.941406 L 209.851563 99.941406 L 209.851563 99.417969 L 209.171875 99.417969 C 208.257813 99.417969 207.480469 99.09375 206.832031 98.445313 C 206.183594 97.796875 205.839844 97.015625 205.804688 96.105469 L 205.804688 66.988281 C 205.839844 66.078125 206.183594 65.296875 206.832031 64.648438 C 207.480469 64 208.257813 63.675781 209.171875 63.675781 L 209.851563 63.675781 L 209.851563 63.152344 L 196.871094 63.152344 L 196.871094 63.675781 L 197.554688 63.675781 C 198.464844 63.675781 199.246094 64 199.894531 64.648438 C 200.542969 65.296875 200.882813 66.078125 200.917969 66.988281 L 200.917969 96.105469 C 200.882813 97.015625 200.542969 97.796875 199.894531 98.445313 C 199.246094 99.09375 198.464844 99.417969 197.554688 99.417969 L 196.871094 99.417969 L 196.871094 99.941406 L 200.917969 99.941406 "
-            class="svg-elem-11"></path>
-          <g clip-path="url(#clip2)" clip-rule="nonzero">
-            <path style="
-									stroke: none;
-									fill-rule: nonzero;
-									fill: rgb(242, 131, 107);
-									fill-opacity: 1;
-								" d="M 230.714844 69.523438 C 230.835938 69.808594 230.972656 70.085938 231.089844 70.378906 C 231.648438 71.796875 232.15625 73.15625 232.609375 74.453125 L 236.628906 85.855469 L 224.21875 85.855469 Z M 222.574219 99.417969 L 222.101563 99.417969 C 221.679688 99.417969 221.269531 99.285156 220.863281 99.023438 C 220.460938 98.761719 220.171875 98.382813 219.996094 97.894531 C 219.855469 97.5 219.859375 97.03125 219.988281 96.5 L 223.511719 87.644531 L 237.257813 87.644531 L 239.183594 93.109375 C 240.550781 97.035156 242.132813 100.300781 243.9375 102.914063 C 245.742188 105.523438 247.6875 107.519531 249.773438 108.90625 C 251.855469 110.289063 253.984375 111.078125 256.160156 111.269531 C 258.328125 111.460938 260.503906 111.101563 262.675781 110.191406 L 262.570313 109.667969 C 260.679688 110.121094 258.925781 110.0625 257.316406 109.484375 C 255.703125 108.90625 254.230469 107.992188 252.898438 106.75 C 251.566406 105.503906 250.359375 104.035156 249.273438 102.335938 C 248.1875 100.632813 247.226563 98.875 246.382813 97.050781 C 245.542969 95.230469 244.808594 93.476563 244.175781 91.796875 L 237.34375 73.402344 C 236.746094 71.789063 236.0625 70.175781 235.292969 68.566406 C 234.523438 66.953125 233.636719 65.5 232.640625 64.203125 C 231.640625 62.90625 230.449219 61.875 229.0625 61.101563 C 227.679688 60.332031 226.074219 59.945313 224.253906 59.945313 C 222.433594 59.945313 220.328125 60.488281 217.945313 61.574219 L 218.105469 62.097656 C 219.925781 61.433594 221.523438 61.222656 222.890625 61.46875 C 224.253906 61.714844 225.453125 62.277344 226.488281 63.152344 C 227.523438 64.027344 228.40625 65.09375 229.144531 66.355469 C 229.203125 66.464844 229.257813 66.582031 229.320313 66.691406 L 216.585938 96.683594 C 216.078125 97.570313 215.476563 98.238281 214.769531 98.65625 C 213.90625 99.164063 213.074219 99.417969 212.269531 99.417969 L 211.796875 99.417969 L 211.796875 99.945313 L 222.574219 99.945313 "
-              class="svg-elem-12"></path>
-          </g>
-          <path style="
-								stroke: none;
-								fill-rule: nonzero;
-								fill: rgb(242, 131, 107);
-								fill-opacity: 1;
-							" d="M 0 38.507813 C 0 17.242188 17.234375 0.00390625 38.5 -0.00390625 L 0 -0.00390625 L 0 39.117188 "
-            class="svg-elem-13"></path>
-        </g>
-      </svg>
+      <div class="item right" style="top: 54%; left: 37%;">
+        <div class="icon"></div>
+        <div class="tooltip">
+          <h3>Sân Bóng Rổ</h3>
+          <p>dummy text</p>
+        </div>
+      </div>    
     </div>
   </div>
-  <!-- // preload -->
-  <form method="post" action="./" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
-    <div class="aspNetHidden">
-      <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-      <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-      <input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="3" />
-      <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
-        value="/wEPDwUKMTk3NjY2MTIwNw8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIBDxYCHgRsYW5nBQJ2aRYCAgMPFgIeBWNsYXNzBUFjYW5oY2FtIG92ZXJmbG93LWhpZGRlbiBzY3JvbGwtc21vb3RoIGhvbWVwYWdlIHNlY3Rpb24tZ3JleSB2aS12bhYCAgUPZBYQAgEPFgIeD1NpdGVNYXBQcm92aWRlcgUMY2FuaGNhbXNpdGUxZAITDw8WBh4IQ3NzQ2xhc3MFE2FsdGNvbnRlbnQxIGNtc3pvbmUeBF8hU0ICAh4HVmlzaWJsZWhkZAIVDw8WBh8EBRBsZWZ0c2lkZSBjbXN6b25lHwUCAh8GaGRkAhcPDxYEHwQFEG1pZGRsZS1mdWxsd2lkdGgfBQICZGQCGQ8PFgYfBAURcmlnaHRzaWRlIGNtc3pvbmUfBQICHwZoZGQCGw8PFgQfBAUTYWx0Y29udGVudDIgY21z" />
-      <input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1"
-        value="em9uZR8FAgJkZAIlD2QWAmYPZBYCZg9kFgJmD2QWBAIBD2QWDgIBDxYCHwZoFgICAQ8WAh4EVGV4dGVkAgMPFgIfB2VkAgUPZBYEAgEPDxYCHwcFAlRvZGQCAw8QZGQWAGQCCQ8WAh8GaBYCAgUPFCsAAw8WAh4PVmFsaWRhdGlvbkdyb3VwBS5mb3Jtd2l6YXJkNDNmMWJmN2ItOTQ3Yi00MmJmLTljM2QtM2JiNDA4Y2U2YzQ4ZBYCHgtDdXJyZW50R3VpZAUkN2EyMjViNTUtNDk0OC00MjllLThiZDgtMmNmNjA4NDlmNjYzFCsAA2RkZGQCDQ8PFgQfBwUNPDwgUXVheSBs4bqhaR8GaGRkAg8PDxYEHwgFLmZvcm13aXphcmQ0M2YxYmY3Yi05NDdiLTQyYmYtOWMzZC0zYmI0MDhjZTZjNDgfBwUQR+G7rWkgdGjDtG5nIHRpbmRkAhEPFgIeBXZhbHVlBQRYw7NhZAIDD2QW" />
-      <input type="hidden" name="__VIEWSTATE2" id="__VIEWSTATE2"
-        value="AgIBDxYCHwdlZAIpDw8WAh8GaGRkGAEFG2N0bDAwJG1kbDEzNTYkY3RsMDAkY2FwdGNoYQ8UKwACBSQ3YTIyNWI1NS00OTQ4LTQyOWUtOGJkOC0yY2Y2MDg0OWY2NjMGAAAAAAAAAABkor+xqZVHGPheK5ZXJxOFE4Z7g1I=" />
-    </div>
-
-    <script type="text/javascript">
-      //<![CDATA[
-      var theForm = document.forms['aspnetForm'];
-      if (!theForm) {
-        theForm = document.aspnetForm;
-      }
-      function __doPostBack(eventTarget, eventArgument) {
-        if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-          theForm.__EVENTTARGET.value = eventTarget;
-          theForm.__EVENTARGUMENT.value = eventArgument;
-          theForm.submit();
-        }
-      }
-      //]]>
-    </script>
-
-
-    <script src="https://ajax.aspnetcdn.com/ajax/4.6/1/WebForms.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      //<![CDATA[
-      window.WebForm_PostBackOptions || document.write('<script type="text/javascript" src="/WebResource.axd?d=yryfc5JLEPgTt0n0r1jdu_V7YLGyn8B7fNd8jhy_JD9mq6BEnXyhoUfc-OJ4FBusnFJTLBUQ86Pe4BvTW5Ow7VeMkvg1&amp;t=636480583623431523"><\/script>');//]]>
-    </script>
-
-
-
-    <script src="https://ajax.aspnetcdn.com/ajax/4.6/1/WebUIValidation.js" type="text/javascript"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/4.6/1/MicrosoftAjax.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      //<![CDATA[
-      (window.Sys && Sys._Application && Sys.Observer) || document.write('<script type="text/javascript" src="/ScriptResource.axd?d=lLchZCmF_9eQohp8_VFjnnM-s5Mws8qhcioaG2jm3IVKz8XZnkqKem359kwDjTpbx-eCFMeSFyADNwUR4LhjyPDAEw1delDaZTsC1_X6qBfKypLy0vaGGyutaPgBfPUkaPQUGHcHVoNirqZHDCYaCnv90zkvCFt_vDXdKTTPA0TArHUY0&t=ffffffffad4b7194"><\/script>');//]]>
-    </script>
-
-    <script src="https://ajax.aspnetcdn.com/ajax/4.6/1/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      //<![CDATA[
-      (window.Sys && Sys.WebForms) || document.write('<script type="text/javascript" src="/ScriptResource.axd?d=mBq-T46DWQvRWLolr7xyeczSXCJwJRBS-e2TcyKTbuVPOPcmNm2WFwPkkH2mEO8zUP3_XZMmZoW9F68u9gpmVvsLmIM1FZPZAui1HDM1vE2yAsGbUD6VLPWjMqHn6DztoGWQdbhkt8rvmnqpCdwd4Fdf32KyYFpUVjPeilH5OCR-YfIT0&t=ffffffffad4b7194"><\/script>'); function WebForm_OnSubmit() {
-        if (typeof (ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
-        return true;
-      }
-      //]]>
-    </script>
-
-    <div class="aspNetHidden">
-
-      <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
-      <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
-        value="/wEdAAaX5hwD0W8cNDhIZrB+QO/Q9IHfWFc4DZGPvPhfr+GcaajVBekgyJti1bcSXMuiyf1Gk2LnItrokm3opJ9SreSXEhd0AvKw8VimrhTpkTnFZBv1EVLjDn1ipRuEcXtoSEep7vMNCyJtYDwTK6NjhobgQdnn9w==" />
-    </div>
-
-
-
-    <script type="text/javascript">
-      //<![CDATA[
-      Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$mdl1356$ctl00$pnlFormWizard', ''], [], [], 90, 'ctl00');
-      //]]>
-    </script>
-
-
-    <!-- FB Plugins -->
-    <div id="fb-root"></div>
-    <!-- // FB Plugins -->
-
-    <!-- Header -->
-    <header
-      class="fixed top-0 left-0 vw-full z-999 transition-all duration-200 ease-linear bg-primary xl:pl-0 xl:pr-[calc(60/1920*100rem)] xl:py-5 xl:bg-transparent xl:bg-top bg-repeat-x bg-contain xl:bg-transparent">
-      <div class="header-wrap flex justify-between items-center xl:justify-start">
-        <!-- Logo -->
-        <div class="logo py-[7px] pl-[15px] xl:basis-[calc(160/1920*100rem)] xl:mr-0 xl:p-0">
-          <div class='Module Module-1347'>
-            <div class='ModuleContent'><a href="/"><img alt=""
-                  class="h-[40px] transition ease-in-out duration-300 xl:h-auto"
-                  src="/Data/Sites/1/skins/default/img/logohutech.png" loading="lazy" /></a></div>
-          </div>
-        </div>
-        <!-- // Logo -->
-        <nav class="navbar-nav hidden xl:flex xl:flex-1 xl:items-center xl:pl-[calc(70/1920*100rem)]" id="toggleMenu">
-          <!-- Main Menu -->
-          <div class='Module Module-1348'>
-            <div class='ModuleContent'>
-              <ul class="main-menu space-y-5 xl:flex xl:items-center xl:space-y-0">
-                <li class="flex-center xl:px-[calc(25/1920*100rem)]">
-                  <a class="font-secondary font-normal text-[calc(20/1920*100rem)] xs:text-[calc(24/1920*100rem)] text-white uppercase text-center xl:text-[calc(18/1920*100rem)]"
-                    href="https://theclassia.com.vn/tong-quan" title="Tổng quan" target="_self">Tổng quan</a>
-                </li>
-                <li class="flex-center xl:px-[calc(25/1920*100rem)]">
-                  <a class="font-secondary font-normal text-[calc(20/1920*100rem)] xs:text-[calc(24/1920*100rem)] text-white uppercase text-center xl:text-[calc(18/1920*100rem)]"
-                    href="https://theclassia.com.vn/vi-tri" title="Khu" target="_self">Khu</a>
-                </li>
-                <li class="flex-center xl:px-[calc(25/1920*100rem)]">
-                  <a class="font-secondary font-normal text-[calc(20/1920*100rem)] xs:text-[calc(24/1920*100rem)] text-white uppercase text-center xl:text-[calc(18/1920*100rem)]"
-                    href="./vtour/tour.html" title="360" target="_self">Tour 360</a>
-                </li>
-                <li class="flex-center xl:px-[calc(25/1920*100rem)]">
-                  <a class="font-secondary font-normal text-[calc(20/1920*100rem)] xs:text-[calc(24/1920*100rem)] text-white uppercase text-center xl:text-[calc(18/1920*100rem)]"
-                    href="https://www.hutech.edu.vn/homepage/tin-tuc/tin-hutech" title="Tin tức" target="_self">Tin tức</a>
-                </li>
-                <li class="flex-center xl:px-[calc(25/1920*100rem)]">
-                  <a class="font-secondary font-normal text-[calc(20/1920*100rem)] xs:text-[calc(24/1920*100rem)] text-white uppercase text-center xl:text-[calc(18/1920*100rem)]"
-                    href="https://youtu.be/mWP3SHsrOI0?si=j0hs3DsuaZHfm4bZ" title="Phim" target="_self">Phim</a>
-                    
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- // Main Menu -->
-
-          <!-- Language -->
-          <div class="hidden">
-            <div class="language flex-center mt-[calc(20/14*1rem)] xl:mt-0 xl:px-[calc(25/1920*100rem)]">
-              <div class='Module Module-1349'><a
-                  class="flex-center w-12 h-12 rounded-full border border-solid border-white text-white text-[calc(18/1920*100rem)] font-secondary xl:hover:bg-thirdly xl:hover:text-white xl:hover:border-thirdly"
-                  href="https://theclassia.com.vn/en-US/Default.aspx" title="EN" target="">EN</a></div>
-            </div>
-          </div>
-          <!-- // Language -->
-        </nav>
-        <!-- Header Button -->
-
-        <!-- // Header Button -->
-        <button
-          class="relative z-100 transition cursor-pointer border-0 m-0 p-0 bg-secondary w-[55px] h-[55px] xl:hidden"
-          id="buttonMenu" type="button" data-target="#toggleMenu" aria-controls="toggleMenu">
-          <span
-            class="transition-all duration-200 ease-in-out block bg-primary absolute left-[15px] opacity-100 rounded-[2px] h-[2px] w-[calc(100%-30px)] top-[calc(50%-8px)] -translate-y-1/2"></span><span
-            class="transition-all duration-200 ease-in-out block bg-primary absolute left-[15px] opacity-100 rounded-[2px] h-[2px] w-[calc(100%-30px)] top-1/2 -translate-y-1/2"></span><span
-            class="transition-all duration-200 ease-in-out block bg-primary absolute left-[15px] opacity-100 rounded-[2px] h-[2px] w-[calc(100%-30px)] top-[calc(50%+8px)] -translate-y-1/2"></span>
-          <div class="flex-center absolute inset-0 w-full h-full z-10 pointer-events-none" id="pulseMe">
-            <div class="bar left absolute bg-primary rounded-5 shadow-bar w-[1px] animate-left-bar"></div>
-            <div class="bar top absolute bg-primary rounded-5 shadow-bar h-[1px] animate-top-bar"></div>
-            <div class="bar right absolute bg-primary rounded-5 shadow-bar w-[1px] animate-right-bar"></div>
-            <div class="bar bottom absolute bg-primary rounded-5 shadow-bar h-[1px] animate-bottom-bar"></div>
-          </div>
-        </button>
-        <div
-          class="mobile-wrap fixed -z-[1] top-0 left-0 pt-28 px-3 vw-full vh-full bg-primary transition ease-in-out duration-300 opacity-0 pointer-events-none xl:hidden xl:opacity-0 xl:pointer-events-none">
-        </div>
-      </div>
-      <!-- Header Left -->
-      <div
-        class="header-left hidden bg-black/[.1] xl:block xl:fixed xl:w-[calc(160/1920*100rem)] xl:vh-full xl:-z-10 xl:top-0 xl:left-0 xl:bottom-0 xl:border-r xl:border-solid xl:border-white pointer-events-none">
-        <div class='Module Module-1351'>
-          <div class='ModuleContent'>
-            <nav class="navbar-social xl:h-full">
-              <ul class="social-list flex-center mt-3 xl:h-full xl:flex-col xl:mt-0 ">
-                <li class="m-2 xl:m-[calc(5/1920*100*1rem)] pointer-events-auto"><a
-                    class="flex-center text-[calc(18/1920*100*1rem)] color-primary bg-secondary w-12 h-12 rounded-full overflow-hidden 2xl:w-12 2xl:h-12 xl:hover:bg-thirdly xl:hover:text-white xl:ease-linear"
-                    href="https://www.facebook.com/hutechuniversity" target="_blank"><em
-                      class="fas fa-spinner fa-spin"></em></a></li>
-                <li class="m-2 xl:m-[calc(5/1920*100*1rem)] pointer-events-auto"><a
-                    class="flex-center text-[calc(18/1920*100*1rem)] color-primary bg-secondary w-12 h-12 rounded-full overflow-hidden 2xl:w-12 2xl:h-12 xl:hover:bg-thirdly xl:hover:text-white xl:ease-linear"
-                    href="https://www.youtube.com/@hutechuniversity" target="_blank"><em
-                      class="fas fa-clock"></em></a>
-                    </li>
-                <li class="m-2 xl:m-[calc(5/1920*100*1rem)] pointer-events-auto"><a
-                    class="flex-center text-[calc(18/1920*100*1rem)] color-primary bg-secondary w-12 h-12 rounded-full overflow-hidden 2xl:w-12 2xl:h-12 xl:hover:bg-thirdly xl:hover:text-white xl:ease-linear"
-                    href="./vtour/tour.html" target="_blank"><em class="fas fa-clock"></em></a>
-                  </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <!-- // Header Left -->
-    </header>
-    <!-- // Header -->
-    <!-- Main -->
-    <main class="relative z-20">
-
-
-      <div id="ctl00_divCenter" class="middle-fullwidth">
-
-
-        <div class="full-page-wrapper" id="fullpage">
-          <div class='hidden Module Module-1381'>
-            <div class='ModuleContent'></div>
-          </div>
-          <section class="home-banner one-page relative w-full bg-primary">
-            <div class='fake-section w-full Module Module-1380'>
-              <div class='ModuleContent'>
-                <div class="main-slide relative">
-                  <div class="swiper hidden md:block">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="image vh-full relative">
-                          <img class="h-full object-cover w-full swiper-shutters-image" loading="lazy"
-                            src="/Data/Sites/1/Banner/hutechbanner.jpg" alt="">
-                            <div class="item top" style="top: 32%; left: 24%;">
-                              <div class="icon"></div>
-                              <div class="tooltip">
-                                <h3>E3</h3>
-                                <p>dummy text</p>
-                              </div>
-                            </div>
-
-                            <div class="item bottom" style="top: 10%; left: 59%;">
-                              <div class="icon"></div>
-                              <div class="tooltip">
-                                <h3>E1</h3>
-                                <p>dummy text</p>
-                              </div>
-                            </div>
-
-                            <div class="item left" style="top: 34%; left: 70%;">
-                              <div class="icon"></div>
-                              <div class="tooltip">
-                                <h3>E2</h3>
-                                <p>dummy text</p>
-                              </div>
-                            </div>
-
-                            <div class="item right" style="top: 54%; left: 37%;">
-                              <div class="icon"></div>
-                              <div class="tooltip">
-                                <h3>Sân Bóng Rổ</h3>
-                                <p>dummy text</p>
-                              </div>
-                            </div>
-                              <!-- Mascot -->
-                            <div class="ggskin ggskin_container " style="bottom: -3px;height: 200px;position: absolute;right: 170px;visibility: inherit;width: 100px;pointer-events: none;transform-origin: 50% 50%;transition: right 0s ease 0s, bottom 0s ease 0s;">
-                              <div class="ggskin ggskin_external " style="border: 0px solid rgb(0, 0, 0);bottom: 0px;cursor: pointer;height: 191px;left: 0px;position: absolute;visibility: inherit;width: 100px;pointer-events: auto;transform-origin: 50% 100%;transition: none 0s ease 0s;transform: translate(0px, 0px) rotate(0deg) scale(0.8, 0.8);">
-                                <img class="ggskin ggskin_external" style="position: absolute; -webkit-user-drag: none; pointer-events: none; height: 191px; left: 50%; margin-left: -47.7727px; top: 50%; margin-top: -95.5px;" src="./images/Mascot.png">
-                                <div class="ggskin ggskin_svg " style="cursor: pointer; height: 40px; position: absolute; right: 0px; top: 0px; visibility: inherit; width: 40px; pointer-events: auto; transform-origin: 0% 100%; transition: width 0s ease 0s, height 0s ease 0s;">
-                                  <img class="ggskin ggskin_svg" src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJjdXJyZW50Q29sb3IiIGNsYXNzPSJiaSBiaS1jaGF0LWZpbGwiIHdpZHRoPSIxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTYgMTYiIGhlaWdodD0iMTYiPgogPHBhdGggZD0iTTggMTVjNC40MTggMCA4LTMuMTM0IDgtN3MtMy41ODItNy04LTctOCAzLjEzNC04IDdjMCAxLjc2Ljc0MyAzLjM3IDEuOTcgNC42LS4wOTcgMS4wMTYtLjQxNyAyLjEzLS43NzEgMi45NjYtLjA3OS4xODYuMDc0LjM5NC4yNzMuMzYyIDIuMjU2LS4zNyAzLjU5Ny0uOTM4IDQuMTgtMS4yMzRBOS4wNiA5LjA2IDAgMCAwIDggMTV6Ii8+Cjwvc3ZnPgo=" style="position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;;">
-                                  <div class="ggskin ggskin_svg " style="cursor: pointer; height: 25px; left: 7.5px; position: absolute; top: 7.5px; visibility: inherit; width: 25px; pointer-events: auto; transform-origin: 50% 50%; transition: none 0s ease 0s; transform: translate(0px, 0px) rotate(0deg) scale(1, 1);"><img class="ggskin ggskin_svg" src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmZmZmIiBjbGFzcz0iYmkgYmktdm9sdW1lLW11dGUtZmlsbCIgd2lkdGg9IjE2IiBmaWxsLW9wYWNpdHk9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE2IDE2IiBoZWlnaHQ9IjE2Ij4KIDxwYXRoIGQ9Ik02LjcxNyAzLjU1QS41LjUgMCAwIDEgNyA0djhhLjUuNSAwIDAgMS0uODEyLjM5TDMuODI1IDEwLjVIMS41QS41LjUgMCAwIDEgMSAxMFY2YS41LjUgMCAwIDEgLjUtLjVoMi4zMjVsMi4zNjMtMS44OWEuNS41IDAgMCAxIC41MjktLjA2em03LjEzNyAyLjA5NmEuNS41IDAgMCAxIDAgLjcwOEwxMi4yMDcgOGwxLjY0NyAxLjY0NmEuNS41IDAgMCAxLS43MDguNzA4TDExLjUgOC43MDdsLTEuNjQ2IDEuNjQ3YS41LjUgMCAwIDEtLjcwOC0uNzA4TDEwLjc5MyA4IDkuMTQ2IDYuMzU0YS41LjUgMCAxIDEgLjcwOC0uNzA4TDExLjUgNy4yOTNsMS42NDYtMS42NDdhLjUuNSAwIDAgMSAuNzA4IDB6Ii8+Cjwvc3ZnPgo=" style="position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;;">
-                                  </div>
-                                </div>
-                                <div class="ggskin ggskin_svg " style="cursor: pointer; height: 40px; position: absolute; right: 0px; top: 0px; visibility: hidden; width: 40px; pointer-events: auto; transform-origin: 0% 100%; transition: width 0s ease 0s, height 0s ease 0s;">
-                                  <img class="ggskin ggskin_svg" src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJjdXJyZW50Q29sb3IiIGNsYXNzPSJiaSBiaS1jaGF0LWZpbGwiIHdpZHRoPSIxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTYgMTYiIGhlaWdodD0iMTYiPgogPHBhdGggZD0iTTggMTVjNC40MTggMCA4LTMuMTM0IDgtN3MtMy41ODItNy04LTctOCAzLjEzNC04IDdjMCAxLjc2Ljc0MyAzLjM3IDEuOTcgNC42LS4wOTcgMS4wMTYtLjQxNyAyLjEzLS43NzEgMi45NjYtLjA3OS4xODYuMDc0LjM5NC4yNzMuMzYyIDIuMjU2LS4zNyAzLjU5Ny0uOTM4IDQuMTgtMS4yMzRBOS4wNiA5LjA2IDAgMCAwIDggMTV6Ii8+Cjwvc3ZnPgo=" style="position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;;">
-                                  <div class="ggskin ggskin_svg " style="cursor: pointer; height: 25px; left: 7.5px; position: absolute; top: 7.5px; visibility: inherit; width: 25px; pointer-events: auto; transform-origin: 50% 50%; transition: none 0s ease 0s; transform: translate(0px, 0px) rotate(0deg) scale(1, 1);"><img class="ggskin ggskin_svg" src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmZmZmIiBjbGFzcz0iYmkgYmktdm9sdW1lLXVwIiB3aWR0aD0iMTYiIGZpbGwtb3BhY2l0eT0iMSIgdmlld0JveD0iMCAwIDE2IDE2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTYiPgogPHBhdGggZD0iTTExLjUzNiAxNC4wMUE4LjQ3MyA4LjQ3MyAwIDAgMCAxNC4wMjYgOGE4LjQ3MyA4LjQ3MyAwIDAgMC0yLjQ5LTYuMDFsLS43MDguNzA3QTcuNDc2IDcuNDc2IDAgMCAxIDEzLjAyNSA4YzAgMi4wNzEtLjg0IDMuOTQ2LTIuMTk3IDUuMzAzbC43MDguNzA3eiIvPgogPHBhdGggZD0iTTEwLjEyMSAxMi41OTZBNi40OCA2LjQ4IDAgMCAwIDEyLjAyNSA4YTYuNDggNi40OCAwIDAgMC0xLjkwNC00LjU5NmwtLjcwNy43MDdBNS40ODMgNS40ODMgMCAwIDEgMTEuMDI1IDhhNS40ODMgNS40ODMgMCAwIDEtMS42MSAzLjg5bC43MDYuNzA2eiIvPgogPHBhdGggZD0iTTEwLjAyNSA4YTQuNDg2IDQuNDg2IDAgMCAxLTEuMzE4IDMuMTgyTDggMTAuNDc1QTMuNDg5IDMuNDg5IDAgMCAwIDkuMDI1IDhjMC0uOTY2LS4zOTItMS44NDEtMS4wMjUtMi40NzVsLjcwNy0uNzA3QTQuNDg2IDQuNDg2IDAgMCAxIDEwLjAyNSA4ek03IDRhLjUuNSAwIDAgMC0uODEyLS4zOUwzLjgyNSA1LjVIMS41QS41LjUgMCAwIDAgMSA2djRhLjUuNSAwIDAgMCAuNS41aDIuMzI1bDIuMzYzIDEuODlBLjUuNSAwIDAgMCA3IDEyVjR6TTQuMzEyIDYuMzkgNiA1LjA0djUuOTJMNC4zMTIgOS42MUEuNS41IDAgMCAwIDQgOS41SDJ2LTNoMmEuNS41IDAgMCAwIC4zMTItLjExeiIvPgo8L3N2Zz4K" style="position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;;">
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- end Mascot -->
-                            <!-- audio -->
-                           
-                            <!-- end audio -->
-                            <!-- gg map -->
-                             
-                            <!-- end gg map -->
-                        </div>
-                        <h2
-                          class="banner-title absolute left-1/2 -translate-x-1/2 bottom-6 w-full px-4 z-10 xl:px-44 xl:bottom-10 2xl:bottom-16 3xl:bottom-28">
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper md:hidden">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="image vh-full relative">
-                          <img class="h-full object-cover w-full swiper-shutters-image" loading="lazy"
-                            src="/Data/Sites/1/Banner/7983033f1805da5b8314.jpg" alt="">
-                        </div>
-                        <h2
-                          class="banner-title absolute left-1/2 -translate-x-1/2 bottom-6 w-full px-4 z-10 xl:px-44 xl:bottom-10 2xl:bottom-16 3xl:bottom-28">
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="main-pagination">
-                    <div class="swiper-pagination">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section  
-          <section class="home-fake-footer-section one-page hidden xl:block">
-            <div class='hidden Module Module-1390'>
-              <div class='ModuleContent'></div>
-            </div>
-          </section>
-          <div class='hidden Module Module-1382'>
-            <div class='ModuleContent'></div>
-          </div>
-        </div>
-
-      </div>
-
-      <div id="ctl00_divAltContent2" class="altcontent2 cmszone">
-
-
-
-      </div>
-    </main>
-    <!-- // Main -->
-   
-    <!-- Script -->
-    <script src="/data/sites/1/skins/default/js/global.min.js?v=5.0.0"></script>
-    <script src="/data/sites/1/skins/default/js/main.min.js?v=5.0.0"></script>
-    <!-- // Script -->
-
-
-
-    <script type="text/javascript">
-      //<![CDATA[
-      var Page_Validators = new Array(document.getElementById("ctl00_mdl1356_ctl00_ctlf0279ee3f1d04eed80263dd5029d85fa_valf0279ee3f1d04eed80263dd5029d85fa"), document.getElementById("ctl00_mdl1356_ctl00_ctl647d96498e9646818b85f9ee01bcf7f0_val647d96498e9646818b85f9ee01bcf7f0"), document.getElementById("ctl00_mdl1356_ctl00_ctl647d96498e9646818b85f9ee01bcf7f0_ctl00"), document.getElementById("ctl00_mdl1356_ctl00_ctl710a84e3129f436299e02a192851e5d4_val710a84e3129f436299e02a192851e5d4"));
-      //]]>
-    </script>
-
-    <!--* CSS *-->
-    <!-- Image Maps -->
-    <link rel="stylesheet" href="/Data/Sites/1/skins/default/lib/tooltipster/tooltipster.bundle.min.css" />
-    <!--* JS *-->
-    <!-- Image Maps -->
-    <script src="/Data/Sites/1/skins/default/lib/maphilight/jquery.rwdImageMaps.min.js"></script>
-    <script src="/Data/Sites/1/skins/default/lib/maphilight/jquery.maphilight.min.js"></script>
-    <script src="/Data/Sites/1/skins/default/lib/tooltipster/tooltipster.bundle.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $('.ground-plan-maparea').maphilight({
-          fill: true,
-          fillColor: '495d51',
-          fillOpacity: 0.1,
-          stroke: true,
-          strokeColor: 'ffffff',
-          strokeOpacity: 1,
-          strokeWidth: 2,
-          fade: true,
-          groupBy: false,
-          wrapClass: false,
-        });
-        $('.ground-plan-maparea[usemap]').rwdImageMaps();
-        $('.home-ground-plan .image-maps map area').each(function (index) {
-          var newPlanId = index + 1;
-          $(this).tooltipster({
-            position: 'bottom',
-            contentAsHTML: true,
-            contentCloning: true,
-            maxWidth: 240,
-            minWidth: 200,
-            onlyOne: true,
-          });
-        })
-        // end Ground Plan Image Map init
-
-        // $('.home-ground-plan .list-ground-plan li').on('click mouseenter', function () {
-        // 	var dataPlan = $(this).data('plan');
-        // 	$('.home-ground-plan .image-maps map area').tooltipster('hide');
-        // 	$(`[data-tooltip-content="${dataPlan}"]`).tooltipster('show');
-        // 	// $(`.home-ground-plan .image-maps area[data-tooltip-content="${dataPlan}"]`).trigger('hover mouseenter mouseover');
-        // });
-        // $('.home-ground-plan .list-ground-plan').on('mouseleave', function () {
-        // 	$('.home-ground-plan .image-maps map area').tooltipster('hide');
-        // });
-      });
-
-    </script>
-    <script type="text/javascript">
-      //<![CDATA[
-
-      var Page_ValidationActive = false;
-      if (typeof (ValidatorOnLoad) == "function") {
-        ValidatorOnLoad();
-      }
-
-      function ValidatorOnSubmit() {
-        if (Page_ValidationActive) {
-          return ValidatorCommonOnSubmit();
-        }
-        else {
-          return true;
-        }
-      }
-
-      document.getElementById('ctl00_mdl1356_ctl00_ctlf0279ee3f1d04eed80263dd5029d85fa_valf0279ee3f1d04eed80263dd5029d85fa').dispose = function () {
-        Array.remove(Page_Validators, document.getElementById('ctl00_mdl1356_ctl00_ctlf0279ee3f1d04eed80263dd5029d85fa_valf0279ee3f1d04eed80263dd5029d85fa'));
-      }
-
-      document.getElementById('ctl00_mdl1356_ctl00_ctl647d96498e9646818b85f9ee01bcf7f0_val647d96498e9646818b85f9ee01bcf7f0').dispose = function () {
-        Array.remove(Page_Validators, document.getElementById('ctl00_mdl1356_ctl00_ctl647d96498e9646818b85f9ee01bcf7f0_val647d96498e9646818b85f9ee01bcf7f0'));
-      }
-
-      document.getElementById('ctl00_mdl1356_ctl00_ctl647d96498e9646818b85f9ee01bcf7f0_ctl00').dispose = function () {
-        Array.remove(Page_Validators, document.getElementById('ctl00_mdl1356_ctl00_ctl647d96498e9646818b85f9ee01bcf7f0_ctl00'));
-      }
-
-      document.getElementById('ctl00_mdl1356_ctl00_ctl710a84e3129f436299e02a192851e5d4_val710a84e3129f436299e02a192851e5d4').dispose = function () {
-        Array.remove(Page_Validators, document.getElementById('ctl00_mdl1356_ctl00_ctl710a84e3129f436299e02a192851e5d4_val710a84e3129f436299e02a192851e5d4'));
-      }
-      Sys.Application.add_init(function () {
-        $create(Sys.UI._UpdateProgress, { "associatedUpdatePanelId": "ctl00_mdl1356_ctl00_pnlFormWizard", "displayAfter": 500, "dynamicLayout": true }, null, null, $get("ctl00_mdl1356_ctl00_up1"));
-      });
-      //]]>
-    </script>
-  </form>
-  <script>
-    (function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src =
-        'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.0&autoLogAppEvents=1';
-      fjs.parentNode.insertBefore(js, fjs);
-    })(document, 'script', 'facebook-jssdk');
-  </script>
-
-  <!-- <script src="/data/sites/1/skins/default/js/comment.js"></script>
-	<script src="/data/sites/1/skins/default/js/ecommerce.js"></script> -->
 </body>
-
 </html>
