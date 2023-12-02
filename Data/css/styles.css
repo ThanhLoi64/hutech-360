@@ -1,0 +1,326 @@
+/* Thiết lập ảnh nền full màn hình */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .background-image {
+    /* Thay đổi URL bằng đường dẫn đến ảnh bạn muốn sử dụng */
+    background-image: url('/images/hutechbanner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .container{
+    width: 100%;
+    height: 98vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+  }
+nav{
+    background: #fff;
+    border-radius: 50px;
+    padding: 5px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0 , 0 , 0.4);
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 13px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+nav ul li::after{
+    content: ' ';
+    background: #FEED01;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+nav ul li:hover{
+    color: black;
+}
+
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 3px solid #fff;
+    background: #8e44ad;
+    cursor: pointer;
+}
+
+.icon:after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(1,1);
+    pointer-events: none;
+    content: "";
+    display: block;
+    width: 26.4px;
+    height: 26.4px;
+    border-radius: 100%;
+    border: 1px solid #8e44ad;
+    transition: border-color 1s linear;
+    animation: icon-pulse 4s linear infinite;
+}
+
+@keyframes icon-pulse{
+    0%{
+        transform: translate(-50%, -50% ) scale(1,1);
+        opacity: 0;
+    }
+
+    20%{
+        transform: translate(-50%, -50% ) scale(1.5,1.5);
+        opacity: 0.9;
+    }
+
+    50%{
+        transform: translate(-50%, -50% ) scale(2,2);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translate(-50%, -50% ) scale(2,2);
+        opacity: 0;
+    }
+}
+
+.item{
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.tooltip{
+    position: absolute;
+    padding: 15px;
+    width: 13em;
+    height: 7em;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    line-height: 1.5em;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0,1s linear;
+}
+
+@media only screen and (max-width:600px){
+    h1{
+        font-size: 2em;
+    }
+} 
+
+.item:hover .tooltip{
+    opacity: 1;
+}
+
+.tooltip h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.top .tooltip{
+    left: calc(50px - 6.5em);
+    bottom: 40px;
+}
+
+.top .tooltip:after{
+    color: #fff;
+    position: absolute;
+    content: "";
+    bottom: -13px;
+    border-top: 13px solid;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    left: calc(50% - 13px);
+}
+
+.bottom .tooltip{
+    left: calc(50px - 6.5em);
+    top: 40px;
+}
+
+.bottom .tooltip:after{
+    color: #fff;
+    position: absolute;
+    content: "";
+    top: -13px;
+    border-bottom: 13px solid;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    left: calc(50% - 13px);
+}
+
+.left .tooltip{
+    bottom: calc(50px - 3.5em);
+    right: 40px;
+}
+
+.left .tooltip:after{
+    color: #fff;
+    position: absolute;
+    content: "";
+    right: -13px;
+    border-left: 13px solid;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    top: calc(50% - 13px);
+}
+
+
+.right .tooltip{
+    bottom: calc(50px - 3.5em);
+    left: 40px;
+}
+
+.right .tooltip:after{
+    color: #fff;
+    position: absolute;
+    content: "";
+    left: -13px;
+    border-left: 13px solid;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    top: calc(50% - 13px);
+}
+/* Thiết lập phần container chứa hình ảnh */
+.image-container {
+    height: 63px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 1%;
+  }
+  
+  /* Thiết lập hình ảnh */
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-user-drag: none;
+    pointer-events: none;
+  }
+ .social-menu ul{
+    position: absolute;
+    top: 5%;
+    right: -5%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+ }
+ .social-menu ul li {
+    list-style: none;
+    margin: 0 15px;
+ }
+ .social-menu ul li .fa-brands {
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color: #000;
+ }
+ .social-menu ul li .fa-brands:hover{
+    color: #fff;
+ }
+ .social-menu ul li .fa-solid {
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color: #000;
+ }
+ .social-menu ul li .fa-solid:hover{
+    color: #fff;
+ }
+ .social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+ }
+ .social-menu ul li a:hover{
+    transform: translate(0, -10px);
+ }
+ .social-menu ul li:nth-child(1) a:hover {
+    background-color: #1877F2;
+ }
+ .social-menu ul li:nth-child(2) a:hover {
+    background-color: #CD201F;
+ }
+ .social-menu ul li:nth-child(3) a:hover {
+    background-color: #00C300;
+ }
+
+  /* CSS cho lớp chứa iframe */
+  .map-container {
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    z-index: 9999;
+    padding: 20px;
+  }
+  .toggle-button {
+    margin-right: -49px; /* Khoảng cách với cạnh phải trang */
+    padding: 0px 20px;
+    background-color:#fff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .social-menu ul button .fas {
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color: #000;
+ }
+ .social-menu ul button .fas:hover{
+    color: black;
+ }
